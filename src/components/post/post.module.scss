@@ -1,0 +1,63 @@
+@import "../../assets/styles/variables";
+
+.posts {
+  background-color: $color-secondary-light;
+  font-family: "Heebo";
+  font-style: normal;
+  color: $color-dark;
+  &_nav {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: $color-secondary;
+    }
+  }
+  &_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_item {
+      padding: 1rem;
+      margin-block: 1.5rem;
+      background-color: #fff;
+      max-width: 49%;
+      h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin-block: 1rem;
+        width: 75%;
+      }
+      ul li {
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 2rem;
+        padding-right: 1.5rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .posts {
+    &_items {
+      display: flex;
+      flex-direction: column;
+      &_item {
+        max-width: 100%;
+      }
+    }
+  }
+}

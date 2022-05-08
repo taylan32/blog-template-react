@@ -1,0 +1,36 @@
+@import "../../assets/styles/global";
+@import "../../assets/styles/variables";
+
+.navi {
+  ul {
+    list-style: none;
+  }
+  &_items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &_item {
+      a {
+        margin-right: 3rem;
+        font-family: "Heebo";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: black;
+      }
+      a:hover {
+        opacity: 0.8;
+        transition: $transation-duration;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .navi {
+    font-size: 1rem;
+    &_items {
+      justify-content: center;
+    }
+  }
+}

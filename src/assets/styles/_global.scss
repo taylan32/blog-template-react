@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&display=swap");
+@import "./variables";
+.btn {
+  color: #fff;
+  border-radius: 2px;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  transition: $transation-duration;
+  &:hover {
+      transform: scale(1.2)
+  }
+}
+
+.btn_primary {
+  @extend .btn;
+  background-color: $color-primary;
+}

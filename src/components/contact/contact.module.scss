@@ -1,0 +1,18 @@
+@import "../../assets/styles/variables";
+
+.contact {
+  &_list {
+   padding: 0rem;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        padding: 1rem;
+    }
+  }
+  p {
+    text-align: center;
+  }
+}
